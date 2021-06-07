@@ -67,6 +67,5 @@ li::before {
   background-color: #3282b8;
   position: absolute;
   top: 12vh;
-  width: 50%;
   height: 6px;
 }
