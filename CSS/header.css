@@ -1,0 +1,72 @@
+.header {
+  display: flex;
+  height: 12vh;
+  background-color: #06161b;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  font-weight: 600;
+  z-index: 100;
+  /* display: none; */
+}
+
+.logo {
+  flex: 1;
+  margin: 0 10px 0 20px;
+}
+
+.logo > img {
+  object-fit: contain;
+  height: 9vh;
+}
+
+.other-pages {
+  height: 9vh;
+  margin: 0 20px 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.other-pages > ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  color: white;
+}
+
+.other-pages > ul > li {
+  margin: 0 30px;
+  cursor: pointer;
+  font-size: 18px;
+  position: relative;
+  font-weight: 100;
+}
+
+.other-pages > ul > li:hover {
+  color: #bbe1fa;
+}
+
+li::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  background-color: #bbe1fa;
+  height: 0.185rem;
+  transform: scale(0, 1);
+  /* transform-origin: 0% 100%; */
+  transition: transform 0.3s ease;
+}
+
+.other-pages ul li:hover::before {
+  transform: scale(1, 1);
+}
+
+.progressbar {
+  background-color: #3282b8;
+  position: absolute;
+  top: 12vh;
+  width: 50%;
+  height: 6px;
+}
